@@ -1,0 +1,187 @@
+body.theme-1 {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+body.theme-2 {
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.card.theme-1 {
+    background: #fff;
+    color: #333;
+}
+.card.theme-2 {
+    background: #232946;
+    color: #fff;
+}
+
+#theme-btn {
+    background: #232946;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 18px;
+    margin-top: -10px;
+    transition: background 0.2s, color 0.2s;
+}
+#theme-btn:hover {
+    background: #f76b1c;
+    color: #fff;
+}
+
+/* Handwritten note effect */
+#handwritten-text {
+    display: inline-block;
+    font-family: 'Pacifico', 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.1em;
+    white-space: pre-wrap;
+    border-right: 2px solid #f76b1c;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #f76b1c; }
+}
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+#modal.show {
+    display: flex;
+}
+
+#modal img {
+    max-width: 350px;
+    max-height: 80vh;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    background: #fff;
+    margin: auto;
+    display: block;
+    animation: popIn 0.5s;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 11;
+    text-shadow: 0 2px 8px #000;
+}
+body {
+    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    padding: 40px 30px;
+    text-align: center;
+    max-width: 400px;
+    position: relative;
+}
+
+h1 {
+    color: #f76b1c;
+    margin-bottom: 16px;
+}
+
+.personal-note {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 24px;
+}
+
+#confetti-btn {
+    background: #f76b1c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#confetti-btn:hover {
+    background: #ff9a44;
+}
+
+#confetti-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#modal {
+    /* ...existing modal styles... */
+    z-index: 10;
+}
+
+#reveal-btn {
+    background: #ff5e62;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    transition: background 0.2s;
+}
+#reveal-btn:hover {
+    background: #ff9966;
+}
+
+.reveal-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#reveal-image {
+    max-width: 350px;
+    max-height: 80vh;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    background: #fff;
+    margin: auto;
+    display: block;
+    animation: popIn 0.5s;
+}
